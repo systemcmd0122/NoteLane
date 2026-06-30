@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoteLane - Markdown 対応カンバンボード | 完全無料・ローカル動作</title>
+
+    <!-- 日本語 -->
+    <meta name="description" content="NoteLaneはMarkdown対応の完全無料カンバンボード。Todo・進行中・完了の3列、ドラッグ＆ドロップ移動、Markdownプレビュー、優先度ラベル、ダークモード、多言語対応。サーバー不要、すべてブラウザのLocalStorageに保存。サインアップ不要、完全プライベート。">
+    <meta name="keywords" content="カンバンボード, タスク管理, Markdown, Todoリスト, プロジェクト管理, 無料, ローカル保存, ドラッグアンドドロップ, ノートレーン, かんばん, タスクボード, やることリスト, 進捗管理, ブラウザ完結, オフライン対応, ダークモード, 日本語対応" />
+
+    <!-- English -->
+    <meta name="description" content="NoteLane is a free, local-only Kanban board with Markdown support. Manage tasks with Todo / In Progress / Done columns, drag & drop, Markdown preview, priority labels, dark mode, and multi-language support. Works entirely in your browser — no sign-up, no servers, no data collection." />
+
+    <!-- 中文 -->
+    <meta name="description" content="NoteLane 是一款完全免费的本地看板工具，支持 Markdown。待办、进行中、已完成三列视图，拖拽移动，Markdown 预览，优先级标签，深色模式，多语言支持。无需注册，无需服务器，数据仅存于浏览器本地存储。" />
+
+    <!-- 한국어 -->
+    <meta name="description" content="NoteLane은 Markdown을 지원하는 완전 무료 로컬 칸반 보드입니다. 할 일, 진행 중, 완료 세 가지 컬럼, 드래그 앤 드롭, Markdown 미리보기, 우선순위 라벨, 다크 모드, 다국어 지원. 서버 불필요, 브라우저 LocalStorage에 저장, 회원가입 없음." />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="NoteLane" />
+    <meta name="application-name" content="NoteLane" />
+    <meta name="theme-color" content="#6366f1" />
+    <meta name="google" content="notranslate" />
+    <link rel="canonical" href="https://notelane.app/" />
+
+    <!-- hreflang -->
+    <link rel="alternate" href="https://notelane.app/" hreflang="ja" />
+    <link rel="alternate" href="https://notelane.app/" hreflang="en" />
+    <link rel="alternate" href="https://notelane.app/" hreflang="zh" />
+    <link rel="alternate" href="https://notelane.app/" hreflang="ko" />
+    <link rel="alternate" href="https://notelane.app/" hreflang="x-default" />
+
+    <!-- Open Graph (ja) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NoteLane" />
+    <meta property="og:title" content="NoteLane - Markdown 対応カンバンボード | 完全無料・ローカル動作" />
+    <meta property="og:description" content="完全無料・サーバー不要のMarkdown対応カンバンボード。Todo・進行中・完了の3列、ドラッグ＆ドロップ、Markdownプレビュー、優先度ラベル。ブラウザだけで完結するタスク管理ツール。" />
+    <meta property="og:url" content="https://notelane.app/" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+    <meta property="og:locale:alternate" content="ko_KR" />
+
+    <!-- Twitter Card (ja) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NoteLane - Markdown 対応カンバンボード" />
+    <meta name="twitter:description" content="完全無料・サーバー不要。Todo・進行中・完了の3列、ドラッグ＆ドロップ、Markdownプレビュー。サインアップ不要、ブラウザだけで完結。" />
+
+    <!-- JSON-LD Structured Data (多言語対応) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "NoteLane",
+      "alternateName": ["ノートレーン", "诺特兰"],
+      "applicationCategory": "Productivity",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript",
+      "description": "NoteLane is a free, local-only Kanban board with Markdown support. Tasks are stored in your browser's LocalStorage — no servers, no sign-up, no data collection.",
+      "description_ja": "完全無料・サーバー不要のMarkdown対応カンバンボード。Todo・進行中・完了の3列、ドラッグ＆ドロップ、Markdownプレビュー、優先度ラベル。ブラウザだけで完結するタスク管理ツール。",
+      "description_zh": "完全免费的本地看板工具，支持Markdown。无需注册，无需服务器，数据仅存于浏览器。",
+      "description_ko": "완전 무료 로컬 칸반 보드, Markdown 지원. 서버 불필요, 회원가입 없음.",
+      "inLanguage": ["ja", "en", "zh", "ko"],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "featureList": [
+        "Markdown preview / Markdownプレビュー",
+        "Drag & drop between columns / ドラッグ＆ドロップ",
+        "Priority labels / 優先度ラベル (High / Medium / Low)",
+        "Dark mode / ダークモード",
+        "Multi-language: 日本語 / English / 中文 / 한국어",
+        "LocalStorage persistence / ローカル保存",
+        "Export / Import JSON / エクスポート・インポート",
+        "Search & filter / 検索・フィルター",
+        "Edit tasks / タスク編集",
+        "Sort within columns / 列内並び替え"
+      ]
+    }
+    </script>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('notelane-dark')
+          var dark = stored !== null
+            ? stored === 'true'
+            : window.matchMedia('(prefers-color-scheme: dark)').matches
+          document.documentElement.classList.toggle('dark', dark)
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
